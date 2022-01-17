@@ -20,7 +20,8 @@ export class BandBusiness{
             throw new UnauthorizedError("Only admins can access this feature")
         }
 
-        if(input.name || input.music_genre || input.responsible){
+        console.log({input})
+        if(!input.name || !input.music_genre || !input.responsible){
             throw new InvalidInputError("Invalid input to registerBand")
         }
 
