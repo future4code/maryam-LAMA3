@@ -33,7 +33,7 @@ export class ShowBusiness {
         if(!Number.isInteger(input.startTime) || !Number.isInteger(input.endTime)){
             throw new InvalidInputError("Times should be integer to createShow")
         }
-
+        // ????
         // const band = await this.bandDatabase.getBandByIdOrName(input.bandId)
 
         // if(!band){
